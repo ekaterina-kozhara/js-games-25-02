@@ -1,30 +1,9 @@
-let go = anime.timeline({
-  easing: 'easeOutExpo',
-  duration: 1000,
-  autoplay: false,
+anime({
+  targets: '.line .path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
 });
-
-go
-.add({
-  targets: '.small-circle',
-  left: {
-    value: 400,
-    duration: 5000,
-  },
-  rotate: 360,
-})
-.add({
-  targets: '.big-circle',
-  top: {
-   value: 500,
-   duration: 250,
-   easing: 'linear',
- },
- rotate: {
-   value: 360,
-   duration: 800,
-   easing: 'easeInOutSine'
- },
-})
-
-document.querySelector('.small-circle').onclick = go.restart;
