@@ -1,0 +1,13 @@
+.small-circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+}
+
+.big-circle {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+}
