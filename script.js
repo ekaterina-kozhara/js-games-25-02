@@ -10,14 +10,14 @@ anime({
 
 anime({
 targets: '.box1',
-translateX: [-30, -10, 950],
+translateX: [-30, -10, 2050],
 duration: 4000,
 endDelay: 1000,
  direction: 'alternate',
 });
 anime({
 targets: '.box2',
-translateY: [-30, 25, 950],
+translateY: [-30, 25, 2050],
 duration: 4000,
 endDelay: 1000,
  direction: 'alternate',
