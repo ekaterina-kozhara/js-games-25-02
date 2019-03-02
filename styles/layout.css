@@ -1,30 +1,117 @@
-/* .small-circle {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  position: absolute;
-}
-
-.big-circle {
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  position: absolute;
-} */
 body {
+  font-family: "FuturaLightC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  background-color: #DDFFD9;
   overflow: hidden;
 }
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear alternate infinite;
+
+main {
+  /* overflow: hidden; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  height: 65vw;
+  justify-content: center;
+  position: relative;
+}
+.box1 {
+  position: absolute;
+  top: 5%;
+  left: 10%;
 }
 
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+.box1 img {
+ width: 36%;
 }
+
+.box2 {
+  z-index: 4;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+
+.box2 img {
+ width: 50%;
+}
+
+.box3 {
+  position: absolute;
+  top: 4%;
+  left: 60%;
+  z-index: 6;
+}
+
+.box3 img {
+  width: 90%;
+}
+
+.box4 {
+  position: absolute;
+  z-index: 7;
+  top: 10%;
+  left: 30%;
+}
+
+.box4 img {
+ width: 35%;
+}
+
+.box6 {
+  transform: rotate(35deg);
+  z-index: -20;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+
+.box6 img {
+  width: 90%;
+}
+
+.box7 {
+  z-index: -30;
+  position: absolute;
+  top: 8%;
+  left: 7%;
+}
+
+.box7 img {
+  width: 64%;
+}
+
+.box8 {
+  z-index: 3;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+
+.box8 img {
+ width: 50%;
+}
+
+.box9 {
+  margin-top: 30px;
+  z-index: 5;
+  position: absolute;
+  left: -5%;
+  top: 6%;
+  width: 110%;
+}
+
+img.line2 {
+  z-index: -10;
+  width: 100%;
+  margin-top: -25%;
+  margin-bottom: -6%;
+}
+.path {
+   -webkit-background-clip: text;
+ }
