@@ -3,35 +3,55 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
-  background-color: #DDFFD9;
+  background-color: #EEF0D9;
   overflow: hidden;
 }
-.blinkingCircle {
+
+.toCenter {
   position: absolute;
-  z-index: -100;
-  top: 50%;
-  bottom: 40%;
-  right: 50%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.tracker {
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: -50;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.blinkingCircle {
   background-color: red;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
+
 main {
-  /* overflow: hidden; */
+  width: 100%;
+  margin-top: 0px;
+  height: 95%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* .background {
-  position: absolute;
-  top: 0px;
-  width: 10%;
-  transform: rotate(90deg);
-  height: 100%;
-  background-color: #FFFFFF;
-} */
+
 .content {
   display: flex;
   height: 65vw;
@@ -120,9 +140,9 @@ main {
   margin-top: 30px;
   z-index: 5;
   position: absolute;
-  left: -5%;
+  left: -10%;
   top: 6%;
-  width: 110%;
+  width: 120%;
 }
 
 img.line2 {
@@ -134,3 +154,21 @@ img.line2 {
 .path {
    -webkit-background-clip: text;
  }
+
+#example .new {
+  opacity: 0;
+  position: absolute;
+  color: black;
+  padding:0px 0px 0px 100px;
+  width:350px;
+  display:none;
+}
+
+p #example .div_opacity {
+ -webkit-transition: opacity .2s ease-in-out;
+ -moz-transition: opacity .2s ease-in-out;
+ -ms-transition: opacity .2s ease-in-out;
+ -o-transition: opacity .2s ease-in-out;
+ transition: opacity .2s ease-in-out;
+ opacity: 1;
+}
