@@ -6,7 +6,17 @@ body {
   background-color: #DDFFD9;
   overflow: hidden;
 }
-
+.blinkingCircle {
+  position: absolute;
+  z-index: -100;
+  top: 50%;
+  bottom: 40%;
+  right: 50%;
+  background-color: red;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
 main {
   /* overflow: hidden; */
   position: relative;
@@ -14,6 +24,14 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+/* .background {
+  position: absolute;
+  top: 0px;
+  width: 10%;
+  transform: rotate(90deg);
+  height: 100%;
+  background-color: #FFFFFF;
+} */
 .content {
   display: flex;
   height: 65vw;
@@ -98,6 +116,7 @@ main {
 }
 
 .box9 {
+  opacity: 0.7;
   margin-top: 30px;
   z-index: 5;
   position: absolute;
