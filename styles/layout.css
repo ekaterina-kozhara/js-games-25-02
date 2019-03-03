@@ -98,7 +98,7 @@ main {
 }
 
 .box4 img {
- width: 35%;
+ width: 34%;
 }
 
 .box6 {
@@ -141,7 +141,7 @@ main {
   z-index: 5;
   position: absolute;
   left: -10%;
-  top: 6%;
+  top: 10%;
   width: 120%;
 }
 
