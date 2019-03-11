@@ -12,6 +12,7 @@ main img {
 
 main img:hover {
   filter: none;
+  /* transform: scale(1.1); */
 }
 
 .toCenter {
@@ -216,9 +217,9 @@ img.feetFlowers {
   opacity: 0;
   position: absolute;
   color: black;
-  padding:0px 0px 0px 100px;
-  width:350px;
-  display:none;
+  padding: 0px 0px 0px 100px;
+  width: 350px;
+  display: none;
 }
 
 p #example .div_opacity {

@@ -81,8 +81,8 @@ anime({
   targets: '.path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
-  duration: 12000,
-  delay: function(el, i) { return i * 250 },
+  duration: 3000,
+  delay: 5000,
   direction: 'alternate',
   // loop: true
 });
