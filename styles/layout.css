@@ -1,5 +1,5 @@
 body {
-  font-family: "FuturaLightC", sans-serif;
+ font-family: 'Alegreya Sans SC', sans-serif;
   margin: 0 auto;
   background-color: #EEF0D9;
   overflow: hidden;
@@ -36,9 +36,9 @@ main img:hover {
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -72,7 +72,7 @@ main {
 img.feet  {
   transform: rotate(12deg);
   position: absolute;
-  top: 67%;
+  top: 78%;
   left: 90%;
   width: 40%;
 }
@@ -87,14 +87,14 @@ img.jump {
 img.concert {
   transform: rotate(-16deg);
   position: absolute;
-  top: 17%;
-  left: 98%;
+  top: 37%;
+  right: -55%;
   width: 48%;
 }
 img.wine {
-  transform: rotate(12deg);
+  transform: rotate(-20deg);
   position: absolute;
-  top: 80%;
+  top: 95%;
   right: -50%;
   width: 40%;
 }
@@ -111,7 +111,7 @@ img.holi {
   position: absolute;
   transform: rotate(4deg);
   z-index: 7;
-  top: 12%;
+  top: 4%;
   left: -3%;
   width: 46%;
 }
@@ -120,8 +120,8 @@ img.food {
   transform: rotate(10deg);
   /* z-index: -10; */
   position: absolute;
-  top: 37%;
-  left: 3%;
+  top: 32%;
+  left: 2%;
   width: 59%;
 }
 
@@ -137,7 +137,7 @@ img.piano {
   transform: rotate(-12deg);
   /* z-index: -30; */
   position: absolute;
-  top: 35%;
+  top: 10%;
   left: -37%;
   width: 60%;
 }
@@ -146,7 +146,7 @@ img.water {
   transform: rotate(-19deg);
   /* z-index: -20; */
   position: absolute;
-  top: 18%;
+  top: 1%;
   left: -27%;
   width: 35%;
 }
@@ -160,6 +160,13 @@ img.feetFlowers {
   left: 55%;
   width: 36%;
 }
+
+/* img.send{
+  width: 80%;
+  position: absolute;
+  bottom: -150%;
+  left: -40%;
+} */
 
 .box9 {
   opacity: 0.7;
