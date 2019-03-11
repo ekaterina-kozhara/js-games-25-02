@@ -1,10 +1,20 @@
 body {
   font-family: "FuturaLightC", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
   background-color: #EEF0D9;
   overflow: hidden;
+}
+main img {
+  transition: all 1s ease-out;
+  filter: grayscale(100%);
+  filter: gray;
+  transition: all 1s;
+}
+
+main img:hover {
+  filter: none;
+  filter: none;
+  transform: scale(1.1);
 }
 
 .toCenter {
@@ -54,91 +64,94 @@ main {
 
 .content {
   display: flex;
-  height: 65vw;
+  height: 30vw;
+  width: 70vw;
+  margin: auto;
   justify-content: center;
   position: relative;
 }
-.box1 {
+
+img.feet  {
   position: absolute;
-  top: 5%;
-  left: 10%;
+  top: -8%;
+  left: -3%;
+  width: 36%;
 }
 
-.box1 img {
- width: 36%;
-}
-
-.box2 {
-  z-index: 4;
+img.jump {
+  /* z-index: 4; */
   position: absolute;
   top: 15%;
   left: 40%;
+  width: 50%;
 }
 
-.box2 img {
- width: 50%;
-}
-
-.box3 {
+img.redbaloon {
   position: absolute;
-  top: 4%;
-  left: 60%;
-  z-index: 6;
+  transform: rotate(7deg);
+  top: 43%;
+  left: 51%;
+  width: 51%;
 }
 
-.box3 img {
-  width: 90%;
-}
-
-.box4 {
+img.holi {
   position: absolute;
+  transform: rotate(4deg);
   z-index: 7;
-  top: 10%;
+  top: 12%;
+  left: -3%;
+  width: 46%;
+}
+
+img.food {
+  transform: rotate(10deg);
+  /* z-index: -10; */
+  position: absolute;
+  top: 37%;
+  left: 3%;
+  width: 59%;
+}
+
+img.waterfall {
+  position: absolute;
+  transform: rotate(7deg);
+  top: 16%;
   left: 30%;
+  width: 34%;
 }
 
-.box4 img {
- width: 34%;
-}
-
-.box6 {
-  transform: rotate(35deg);
-  z-index: -20;
+img.piano {
+  transform: rotate(-12deg);
+  /* z-index: -30; */
   position: absolute;
-  top: 15%;
-  left: 40%;
+  top: 35%;
+  left: -37%;
+  width: 60%;
 }
 
-.box6 img {
-  width: 90%;
-}
-
-.box7 {
-  z-index: -30;
+img.water {
+  transform: rotate(-19deg);
+  /* z-index: -20; */
   position: absolute;
-  top: 8%;
-  left: 7%;
+  top: 18%;
+  left: -27%;
+  width: 35%;
 }
 
-.box7 img {
-  width: 64%;
-}
 
-.box8 {
-  z-index: 3;
+img.feetFlowers {
+  transform: rotate(15deg);
+  /* z-index: 3; */
   position: absolute;
-  top: 5%;
-  left: 45%;
-}
-
-.box8 img {
- width: 50%;
+  top: 20%;
+  left: 55%;
+  width: 36%;
 }
 
 .box9 {
   opacity: 0.7;
   margin-top: 30px;
-  z-index: 5;
+  /* z-index: 5; */
   position: absolute;
   left: -10%;
   top: 10%;
@@ -146,13 +159,13 @@ main {
 }
 
 img.line2 {
-  z-index: -10;
+  /* z-index: -10; */
   width: 100%;
   margin-top: -25%;
   margin-bottom: -6%;
 }
 .path {
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
  }
 
 #example .new {
