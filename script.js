@@ -1,12 +1,190 @@
+var tl = anime.timeline({
+  targets: '.piano, .water, .holi, .food, .waterfall, .redbaloon, .feetFlowers, .jump, .feet, .piano, .concert, .wine',
+  delay: function(el, i) { return i * 200 },
+  duration: 900,
+  easing: 'easeOutExpo',
+  direction: 'alternate'
+});
+tl
+.add({
+  translateY: 100,
+  easing: 'spring',
+  duration: 20
+})
+.add({
+  targets: '.piano',
+  rotate: 20,
+  duration: 30
+})
+.add({
+  targets: '.water',
+  rotate: -15,
+  duration: 30
+})
+.add({
+  targets: '.holi',
+  rotate: 20,
+  duration: 30
+})
+.add({
+  targets: '.waterfall',
+  rotate: 20,
+  duration: 30
+})
+.add({
+  targets: '.food',
+  rotate: -15,
+  duration: 30
+})
+.add({
+  targets: '.feetFlowers',
+  rotate: 20,
+  duration: 30
+})
+.add({
+  targets: '.redbaloon',
+  rotate: 20,
+  duration: 30
+})
+.add({
+  targets: '.jump',
+  rotate: 20,
+  duration: 30
+})
+.add({
+  targets: '.feet',
+  rotate: -15,
+  duration: 30
+})
+.add({
+  targets: '.concert',
+  rotate: -15,
+  duration: 30
+})
+.add({
+  targets: '.feet',
+  rotate: 20,
+  duration: 30
+})
+.add({
+  opacity: .0,
+  scale: 1.1,
+  duration: 30
+})
+.add({
+  translateY: 0,
+  scale: 1
+});
+
+
 anime({
   targets: '.path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
-  duration: 5000,
+  duration: 9000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
-  loop: true
+  // loop: true
 });
+
+// anime({
+//   targets: '.piano',
+//   translateY: 100,
+//   delay: anime.stagger(200, {start: 500}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.water',
+//   translateY: 90,
+//   delay: anime.stagger(200, {start: 600}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.holi',
+//   translateY: 80,
+//   delay: anime.stagger(200, {start: 700}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.food',
+//   translateY: 50,
+//   delay: anime.stagger(200, {start: 800}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.water',
+//   translateY: 80,
+//   delay: anime.stagger(200, {start: 900}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.waterfall',
+//   translateY: 80,
+//   delay: anime.stagger(200, {start: 1000}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.redbaloon',
+//   translateY: 80,
+//   delay: anime.stagger(200, {start: 1100}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.feetFlowers',
+//   translateY: 90,
+//   delay: anime.stagger(200, {start: 1100}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.jump',
+//   translateY: 80,
+//   delay: anime.stagger(200, {start: 1200}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+// anime({
+//   targets: '.feet',
+//   translateY: 80,
+//   delay: anime.stagger(200, {start: 1300}),
+//   endDelay: 600,
+//   direction: 'alternate',
+//   loop: true
+// });
+
+
+
+
+
+
+
+
+
+// anime({
+//   targets: '.path',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInOutSine',
+//   duration: 5000,
+//   delay: function(el, i) { return i * 250 },
+//   direction: 'alternate',
+//   loop: true
+// });
 
 // anime({
 // targets: '.holi',
