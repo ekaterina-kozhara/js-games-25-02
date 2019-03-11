@@ -7,9 +7,11 @@ var tl = anime.timeline({
 });
 tl
 .add({
-  translateY: 100,
-  easing: 'spring',
-  duration: 20
+  translateY: {
+    value: 100,
+    easing: 'spring',
+    duration: 1
+  }  
 })
 .add({
   targets: '.piano',
